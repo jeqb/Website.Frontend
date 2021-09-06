@@ -20,8 +20,22 @@ jobs:
     - name: Checkout master
       uses: actions/checkout@master
 
-    - name: test
-      run: echo -e "Testing the new pipeline"
-
     - name: Build Frontend container image
       run: docker build --tag website:frontend -f ./website-frontend/Dockerfile ./website-frontend
+
+    - name: GitHub Action for DigitalOcean - doctl
+      uses: digitalocean/action-doctl@v2.0.0
+      with:
+        # Version of doctl to install
+        version: latest
+        # DigitalOcean API Token
+        token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+    - name: Log into DigitalOcean doctl
+      run: doctl registry login
+
+    - name: Tag frontend image in registry
+      run: docker tag website:frontend registry.digitalocean.com/website-registry/website:frontend
+
+    - name: Push frontend image to registry
+      run: docker push registry.digitalocean.com/website-registry/website:frontend

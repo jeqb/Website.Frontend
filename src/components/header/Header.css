@@ -1,0 +1,47 @@
+.Header {
+    position: sticky;
+    top: 0;
+    height: 8%;
+    color:cyan;
+
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    z-index: 1;
+}
+
+.Button {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+    transform: skew(20deg);
+
+    border-style: solid;
+    border-radius: 8%;
+
+    margin-top: .5%;
+    margin-bottom: .5%;
+    margin-left: .2%;
+    margin-right: .2%;
+
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.Button:hover {
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    color: #F9C80E;
+}
+
+.End {
+    margin-right: 1%;
+}
+
+/* ensures text does not get hilighted */
+::selection {
+    color: none;
+    background: none;
+}

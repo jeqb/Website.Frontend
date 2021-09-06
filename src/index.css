@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "RoadRage";
+  src: local("RoadRage"),
+    url("./fonts/Road_Rage.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "TarrgetRegular";
+  src: local("TarrgetRegular"),
+    url("./fonts/TarrgetRegular-WEOz.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "VRC";
+  src: local("VRC"),
+    url("./fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Indelible";
+  src: local("Indelible"),
+    url("./fonts/Indelible.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Neon";
+  src: local("Neon"),
+    url("./fonts/Neon.ttf") format("truetype");
+  font-weight: normal;
+}

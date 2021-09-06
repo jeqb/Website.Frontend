@@ -23,12 +23,9 @@ jobs:
     - name: Build Frontend container image
       run: docker build --tag website:frontend -f ./website-frontend/Dockerfile ./website-frontend
 
-    - name: GitHub Action for DigitalOcean - doctl
-      uses: digitalocean/action-doctl@v2.0.0
+    - name: Install doctl
+      uses: digitalocean/action-doctl@v2
       with:
-        # Version of doctl to install
-        version: latest
-        # DigitalOcean API Token
         token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
 
     - name: Log into DigitalOcean doctl

@@ -26,6 +26,9 @@ jobs:
         npm install
         npm run build --if-present
 
+    - name: Compress files
+      run: tar -czvf deploy_files.tar.gz .
+
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
       with:
@@ -44,6 +47,9 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: node-app
+
+    - name: Decompress files
+      run: tar -xzvf deploy_files.tar.gz
 
     - name: 'Deploy to Azure Web App'
       id: deploy-to-webapp

@@ -30,7 +30,7 @@ jobs:
       run: rm -r -f ./node_modules
 
     - name: Archive with tar (speed up Upload)
-      run: tar -czvf compressedFiles.tar.gz .
+      run: tar -czvf compressedFiles.tar.gz --exclude ./.git .
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2

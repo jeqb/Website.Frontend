@@ -29,6 +29,9 @@ jobs:
     - name: Delete Node Modules
       run: rm -r -f ./node_modules
 
+    - name: Archive with tar (speed up Upload)
+      run: tar -czvf compressedFiles.tar.gz .
+
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
       with:
@@ -47,6 +50,9 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: node-app
+
+    - name: Decompress the files
+      run: tar -xzvf compressedFiles.tar.gz
 
     - name: 'Deploy to Azure Web App'
       id: deploy-to-webapp

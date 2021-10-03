@@ -1,13 +1,10 @@
 html, body, #root, .App {
   height: 100vh;
   margin: 0;
-  font-family: RoadRage;
+  font-family: AtarianSystem;
 }
 
 .Content-Container {
-  opacity: 50%;
-  background-color: green;
-
   /* aaaaaaaand it's fucked */
   /* 92 because the 8 is in the header */
   /* height: 92vh; */

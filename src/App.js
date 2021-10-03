@@ -1,20 +1,16 @@
 import './App.css';
 import Header from './components/header/Header';
-import Background from './components/background/Background';
+import RetroBackground from './components/background/RetroBackground';
 
 
 const App = () => {
   return (
     <div className="App">
       <Header/>
-      <Background/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h3 className="Under-Construction">
-        Under Construction
-      </h3>
+      <RetroBackground/>
+      <div className="Content-Container">
+        Hello world
+      </div>
     </div>
   );
 }

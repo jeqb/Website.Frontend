@@ -4,17 +4,17 @@ html, body, #root, .App {
   font-family: RoadRage;
 }
 
-.Under-Construction {
+.Content-Container {
+  opacity: 50%;
+  background-color: green;
+
+  /* aaaaaaaand it's fucked */
+  /* 92 because the 8 is in the header */
+  /* height: 92vh; */
+  /* gets content to align with the bottom of the sun */
+  margin-top: 17vh;
+
   text-align: center;
-  z-index: 1;
-  color: violet;
-
-  font-size: large;
-  font-family: RoadRage;
-
-  font-size: 10vh;
-
-  animation: flash 0.3s ease infinite alternate;
 }
 
 /* ANIMATION */

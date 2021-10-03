@@ -10,6 +10,8 @@ import './fonts/TarrgetRegular-WEOz.otf';
 import './fonts/VCR_OSD_MONO_1.001.ttf';
 import './fonts/Indelible.otf';
 import './fonts/Neon.ttf';
+import './fonts/zeroes two.ttf';
+import './fonts/SF Atarian System.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

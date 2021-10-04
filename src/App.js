@@ -16,7 +16,6 @@ const App = () => {
       <Switch>
         <Redirect exact from='/' to='/about'/>
         <Route path='/about' component={About} />
-        <Route path='/notfound' component={NotFound} />
         <Route component={NotFound} />
       </Switch>
     </div>

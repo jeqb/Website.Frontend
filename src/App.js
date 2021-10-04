@@ -5,6 +5,7 @@ import { Route, withRouter, Switch, Redirect } from 'react-router-dom';
 import Header from './components/header/Header';
 import RetroBackground from './components/background/RetroBackground';
 import About from './components/about/About';
+import NotFound from './components/not-found/NotFound';
 
 
 const App = () => {
@@ -14,7 +15,9 @@ const App = () => {
       <RetroBackground/>
       <Switch>
         <Redirect exact from='/' to='/about'/>
-        <Route exact path='/about' component={About}/>
+        <Route path='/about' component={About} />
+        <Route path='/notfound' component={NotFound} />
+        <Route component={NotFound} />
       </Switch>
     </div>
   );

@@ -11,6 +11,8 @@ html, body, #root, .App {
   /* gets content to align with the bottom of the sun */
   margin-top: 17vh;
 
+  font-family: VRC;
+  color:cyan;
   text-align: center;
 }
 

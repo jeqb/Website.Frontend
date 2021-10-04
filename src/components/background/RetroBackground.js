@@ -1,21 +1,21 @@
 import React from 'react';
-import './Background.css';
+import './RetroBackground.css';
 import { ReactComponent as CloudSvg } from './cloud_effect.svg';
 
-const Background = () => {
+const RetroBackground = () => {
   return(
     <div
       className="background-80s animated-clouds stars"
     >
-      <div class="sun"></div>
+      <div className="sun"></div>
 
-      <div class="grid"></div>
+      <div className="grid"></div>
 
-      <div class="overlay"></div>
+      <div className="overlay"></div>
 
       <CloudSvg/>
     </div>
   )
 };
 
-export default Background;
+export default RetroBackground;

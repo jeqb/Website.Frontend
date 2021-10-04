@@ -1,8 +1,8 @@
 .background-80s{
-  height: 100%;
+  height: 100vh;
   margin: 0;
   background: linear-gradient(to bottom, #010310 0,#0c1142 0%,#45125e 5%,#d53567 20%,#f0c3d9 25%,#0c1142 25%) fixed;
-  background-size:100% var(--background-height,100vh);
+  background-size:100vh var(--background-height,100vh);
   overflow:hidden;
   position:absolute;
   left:0;
@@ -19,8 +19,8 @@
 .background-80s:before{
   content:'';
   background: linear-gradient(to bottom, #010310 0,#0c1142 0%,#45125e 5%,#d53567 20%,#f0c3d9 25%,#0c1142 25%) fixed;
-  width:100%;
-  height:15%;
+  width:100vh;
+  height:15vh;
   position:absolute;
   z-index:-1;
   left:0;
@@ -67,7 +67,7 @@
   position:absolute;
   background-color:yellow;
   left:calc(50%);
-  bottom:75%;
+  bottom:75vh;
   transform:translateX(-50%);
   background-image: linear-gradient(red,yellow),linear-gradient(black,white);
   clip-path:polygon(-50% 0px,150% -50%,150% 55%,-50% 55%,
@@ -82,7 +82,7 @@
 
 .grid{
   position:absolute;
-  bottom: 10%;
+  bottom: 10vh;
   left:0;
   margin-left: -50%;
   width: 200%;

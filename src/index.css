@@ -46,3 +46,17 @@ code {
     url("./fonts/Neon.ttf") format("truetype");
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "ZeroesTwo";
+  src: local("ZeroesTwo"),
+    url("./fonts/zeroes two.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AtarianSystem";
+  src: local("AtarianSystem"),
+    url("./fonts/SF Atarian System.ttf") format("truetype");
+  font-weight: normal;
+}

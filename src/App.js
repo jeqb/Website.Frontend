@@ -1,22 +1,25 @@
 import './App.css';
+
+import { Route, withRouter, Switch, Redirect } from 'react-router-dom';
+
 import Header from './components/header/Header';
-import Background from './components/background/Background';
+import RetroBackground from './components/background/RetroBackground';
+import About from './components/about/About';
+import NotFound from './components/not-found/NotFound';
 
 
 const App = () => {
   return (
     <div className="App">
       <Header/>
-      <Background/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h3 className="Under-Construction">
-        Under Construction
-      </h3>
+      <RetroBackground/>
+      <Switch>
+        <Redirect exact from='/' to='/about'/>
+        <Route path='/about' component={About} />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

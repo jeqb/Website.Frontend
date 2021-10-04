@@ -1,20 +1,19 @@
 html, body, #root, .App {
-  height: 100%;
+  height: 100vh;
   margin: 0;
-  font-family: RoadRage;
+  font-family: AtarianSystem;
 }
 
-.Under-Construction {
+.Content-Container {
+  /* aaaaaaaand it's fucked */
+  /* 92 because the 8 is in the header */
+  /* height: 92vh; */
+  /* gets content to align with the bottom of the sun */
+  margin-top: 17vh;
+
+  font-family: VRC;
+  color:cyan;
   text-align: center;
-  z-index: 1;
-  color: violet;
-
-  font-size: large;
-  font-family: RoadRage;
-
-  font-size: 100px;
-
-  animation: flash 0.3s ease infinite alternate;
 }
 
 /* ANIMATION */

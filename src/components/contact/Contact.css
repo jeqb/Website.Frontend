@@ -1,0 +1,29 @@
+h1 {
+    font-family: VRC;
+
+    text-align: left;
+    padding-left: 10%;
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+}
+
+input {
+    background-color: blueviolet;
+    border: 0;
+    outline: 0;
+    color: #F9C80E;
+    font-family: VRC;
+}
+
+textarea {
+    background: blueviolet;
+    border: 0;
+    outline: 0;
+    color: #F9C80E;
+    font-family: VRC;
+}

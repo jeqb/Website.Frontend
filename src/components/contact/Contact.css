@@ -5,9 +5,25 @@ h1 {
     padding-left: 10%;
 }
 
-p {
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: justify;
-    line-height: 2;
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+}
+
+input {
+    background-color: blueviolet;
+    border: 0;
+    outline: 0;
+    color: #F9C80E;
+    font-family: VRC;
+}
+
+textarea {
+    background: blueviolet;
+    border: 0;
+    outline: 0;
+    color: #F9C80E;
+    font-family: VRC;
 }

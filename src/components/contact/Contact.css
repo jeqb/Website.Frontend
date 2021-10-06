@@ -1,0 +1,13 @@
+h1 {
+    font-family: VRC;
+
+    text-align: left;
+    padding-left: 10%;
+}
+
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    line-height: 2;
+}

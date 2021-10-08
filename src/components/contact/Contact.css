@@ -1,10 +1,3 @@
-h1 {
-    font-family: VRC;
-
-    text-align: left;
-    padding-left: 10%;
-}
-
 .ContactForm {
     display: flex;
     flex-direction: column;

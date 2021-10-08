@@ -16,6 +16,13 @@ html, body, #root, .App {
   text-align: center;
 }
 
+h1 {
+  font-family: VRC;
+
+  text-align: left;
+  padding-left: 10%;
+}
+
 /* ANIMATION */
 @keyframes flash {
   from {

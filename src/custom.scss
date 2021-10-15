@@ -1,4 +1,10 @@
 // Override default variables before the import
+$cyan:    cyan !default;
+$navbar-dark-color:                 rgba($cyan, .55) !default;
+$navbar-dark-hover-color:           rgba($cyan, .75) !default;
+$navbar-dark-active-color:          $cyan !default;
+$navbar-dark-disabled-color:        rgba($cyan, .25) !default;
+$navbar-dark-toggler-border-color:  rgba($cyan, .1) !default;
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';

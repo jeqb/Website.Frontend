@@ -35,7 +35,7 @@ const Header = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <div
-                className="nav-link active Button"
+                className={`nav-link active ${isNavCollapsed ? 'Button' : 'Button Button-Collapsed'}`}
                 aria-current="page"
                 onClick={() => handleClick('/about')}
               >
@@ -44,7 +44,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <div
-                className="nav-link active Button"
+                className={`nav-link active ${isNavCollapsed ? 'Button' : 'Button Button-Collapsed'}`}
                 aria-current="page"
                 onClick={() => handleClick('/services')}
               >
@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <div
-                  className="nav-link active Button"
+                  className={`nav-link active ${isNavCollapsed ? 'Button' : 'Button Button-Collapsed'}`}
                   aria-current="page"
                   onClick={() => handleClick('/contact')}
                 >

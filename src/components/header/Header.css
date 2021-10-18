@@ -39,8 +39,9 @@
     color: #F9C80E;
 }
 
-.End {
-    margin-right: 1vw;
+.Button-Collapsed {
+    color:green;
+    border-radius: 1%;
 }
 
 /* ensures text does not get hilighted */

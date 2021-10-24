@@ -118,3 +118,21 @@
 .animated-clouds:before{
   filter: url(#filter);
 }
+
+/* ANIMATION */
+@keyframes flash {
+  from {
+    text-shadow: 
+      0 0 5px #fc0303,
+      0 0 10px #fc0303,
+      0 0 20px #fc0303,
+      0 0 40px #fc0303;
+  }
+  to {
+    text-shadow: 
+      0 0 5px #03cafc,
+      0 0 10px #03cafc,
+      0 0 20px #03cafc,
+      0 0 40px #03cafc;
+  }
+}

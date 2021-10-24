@@ -13,9 +13,9 @@ const Header = () => {
     history.push(path);
   
   };
-
+  
   return (
-    <nav className="navbar navbar-expand-lg navbar-expand-md navbar-dark ">
+    <nav className="navbar navbar-expand-lg navbar-expand-md navbar-dark">
       <div className="container-fluid">
         <button
           className="navbar-toggler"

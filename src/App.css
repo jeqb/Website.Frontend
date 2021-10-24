@@ -1,14 +1,9 @@
 html, body, #root, .App {
   height: 100vh;
   margin: 0;
-  font-family: AtarianSystem;
-}
 
-h1 {
   font-family: VRC;
-
-  text-align: left;
-  padding-left: 10%;
+  color:cyan;
 }
 
 .Content-Container {
@@ -44,7 +39,7 @@ h1 {
   padding-right: 1vw;
 }
 
-.Button:hover {
+.RetroButton:hover {
   transition-duration: 0.3s;
   cursor: pointer;
 
@@ -60,22 +55,4 @@ h1 {
 ::selection {
   color: none;
   background: none;
-}
-
-/* ANIMATION */
-@keyframes flash {
-  from {
-    text-shadow: 
-      0 0 5px #fc0303,
-      0 0 10px #fc0303,
-      0 0 20px #fc0303,
-      0 0 40px #fc0303;
-  }
-  to {
-    text-shadow: 
-      0 0 5px #03cafc,
-      0 0 10px #03cafc,
-      0 0 20px #03cafc,
-      0 0 40px #03cafc;
-  }
 }

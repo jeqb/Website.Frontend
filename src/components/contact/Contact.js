@@ -14,50 +14,47 @@ const Contact = () => {
     console.log('message: ', message);
   };
 
+  // onChange={e => setName(e.target.value)}
+  // onClick={e => { handleSubmit(e) }}
+
   return (
     <div className="Content-Container">
       <h1>
         Contact
       </h1>
-      <div
-        className="ContactForm"
-      >
-        <label>Name</label>
-        <br/>
-        <input
-          name='Name'
-          type='text'
-          onChange={e => setName(e.target.value)}
-        />
-        <br/>
-        <br/>
-        <label>Contact Email</label>
-        <br/>
-        <input
-          name='Email'
-          type='text'
-          onChange={e => setEmail(e.target.value)}
-        />
-        <br/>
-        <br/>
-        <label>Message</label>
-        <br/>
-        <textarea
-          name='Message'
-          type='text'
-          cols="50"
-          rows="10"
-          onChange={e => setMessage(e.target.value)}
-        />
-        <br/>
-        <br/>
-        <div
-          className="Button"
-          onClick={e => { handleSubmit(e) }}
-        >
+      <form>
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">
+            Name
+          </label>
+          <input
+            type="name"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">
+            Email Address
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">
+            Message
+          </label>
+          <textarea class="form-control" placeholder="Type Message here" rows="4"></textarea>
+        </div>
+        <div class="RetroButton">
           Submit
         </div>
-      </div>
+      </form>
     </div>
   )
 };

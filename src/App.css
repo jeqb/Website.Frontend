@@ -1,9 +1,13 @@
 html, body, #root, .App {
-  height: 100vh;
+  height: 100%;
   margin: 0;
 
   font-family: VRC;
   color:cyan;
+}
+
+body {
+  padding-top: 70px;
 }
 
 .RetroButton {

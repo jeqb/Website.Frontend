@@ -18,20 +18,19 @@ const Contact = () => {
   // onClick={e => { handleSubmit(e) }}
 
   return (
+    <div className="align-middle" style={{maxHeight: '100vh'}}>
       <div className="container-fluid">
-
         <div className="row">
           <div className="col-lg-2 col-sm-12">
-            <h1 className="text-center">Contact</h1>
+            <h1 className="text-center">
+              Contact
+            </h1>
           </div>
         </div>
-
         <div className="row">
-
           <div className="col-lg-2">
             {/* spacer */}
           </div>
-
           <div className="col-lg-4 col-sm-12">
             <label className="form-label" for="name">
               Name
@@ -41,7 +40,6 @@ const Contact = () => {
               Name is required.
             </div>
           </div>
-
           <div className="col-lg-4 col-sm-12">
             <label className="form-label" for="emailAddress">Email Address</label>
             <input className="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
@@ -52,19 +50,14 @@ const Contact = () => {
               Email Address Email is not valid.
             </div>
           </div>
-
           <div className="col-lg-2">
             {/* spacer */}
           </div>
-
         </div>
-
         <div className="row">
-
           <div className="col-lg-2">
             {/* spacer */}
           </div>
-
           <div className="col-lg-8 col-sm-12">
             <label className="form-label" for="message">
               Message
@@ -73,22 +66,18 @@ const Contact = () => {
             <div className="invalid-feedback" data-sb-feedback="message:required">
               Message is required.
             </div>
-
             <div className="d-flex align-items-center justify-content-center">
               <div className="RetroButton">
                 Submit
               </div>
             </div>
-
           </div>
-
           <div className="col-lg-2">
             {/* spacer */}
           </div>
-
         </div>
-
-  </div>
+      </div>
+    </div>
   )
 };
 

@@ -6,18 +6,6 @@ html, body, #root, .App {
   color:cyan;
 }
 
-.Content-Container {
-  /* aaaaaaaand it's fucked */
-  /* 92 because the 8 is in the header */
-  /* height: 92vh; */
-  /* gets content to align with the bottom of the sun */
-  margin-top: 17vh;
-
-  font-family: VRC;
-  color:cyan;
-  text-align: center;
-}
-
 .RetroButton {
   display: flex;
   align-items:center;

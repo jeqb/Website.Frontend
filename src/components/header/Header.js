@@ -15,7 +15,7 @@ const Header = () => {
   };
   
   return (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-expand-md">
+    <nav className="navbar navbar-expand-lg navbar-expand-md navbar-dark">
       <div className="container-fluid">
         <button
           className="navbar-toggler"

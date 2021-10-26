@@ -6,10 +6,6 @@ html, body, #root, .App {
   color:cyan;
 }
 
-body {
-  padding-top: 70px;
-}
-
 .RetroButton {
   display: flex;
   align-items:center;
@@ -39,7 +35,7 @@ body {
 }
 
 .Button-Collapsed {
-  color:green;
+  color:cyan;
   border-radius: 1%;
 }
 

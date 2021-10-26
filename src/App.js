@@ -13,9 +13,9 @@ import NotFound from './components/not-found/NotFound';
 
 const App = () => {
   return (
-    <div className="App" style={{background: 'black'}}>
+    <div className="App">
       <Header/>
-      {/* <RetroBackground/> */}
+      <RetroBackground/>
       <Switch>
         <Redirect exact from='/' to='/about'/>
         <Route path='/about' component={About} />

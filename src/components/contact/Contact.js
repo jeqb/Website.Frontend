@@ -18,7 +18,7 @@ const Contact = () => {
   // onClick={e => { handleSubmit(e) }}
 
   return (
-    <div className="container-fluid h-70">
+    <div className="container-fluid">
       <div className="row">
         <div className="col-lg-2 col-md-2 col-sm-12">
           <h1 className="text-center">

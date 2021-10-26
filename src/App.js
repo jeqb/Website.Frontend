@@ -15,7 +15,6 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <RetroBackground/>
       <Switch>
         <Redirect exact from='/' to='/about'/>
         <Route path='/about' component={About} />
@@ -23,6 +22,7 @@ const App = () => {
         <Route path='/services' component={Services} />
         <Route component={NotFound} />
       </Switch>
+      <RetroBackground/>
     </div>
   );
 }

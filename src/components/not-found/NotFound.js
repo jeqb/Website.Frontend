@@ -2,10 +2,12 @@ import React from 'react';
 
 const NotFound = () => {
   return (
-    <div className="Content-Container">
-      <h2>
-        NOT FOUND
-      </h2>
+    <div className="container-fluid">
+      <div className="row">
+        <h1 className="text-center">
+          Not Found
+        </h1>
+      </div>
     </div>
   );
 };

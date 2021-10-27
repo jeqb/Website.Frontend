@@ -16,7 +16,7 @@ const About = () => {
         <div className="col-lg-1 col-md-1">
           {/* spacer */}
         </div>
-        <div className="col-lg-2 col-sm-12 text-center">
+        <div className="col-lg-2 col-md-2 col-sm-12 text-center">
           <img
             src={Self}
             alt=""
@@ -24,7 +24,7 @@ const About = () => {
             style={{borderRadius: '3%', border: '2px solid cyan'}}
           />
         </div>
-        <div className="col-lg-5 col-sm-12">
+        <div className="col-lg-5 col-md-5 col-sm-12">
           <p>
             I am a software engineer based out of Phoenix Arizona. I specialize in
             cloud developement, specifically in the Azure ecosystem.
@@ -41,7 +41,7 @@ const About = () => {
             then React or Angular for the frontend.
           </p>
         </div>
-        <div className="col-lg-3 col-sm-12">
+        <div className="col-lg-3 col-md-3 col-sm-12">
           <img
             src={Sunset}
             alt=""

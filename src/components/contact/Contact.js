@@ -13,6 +13,9 @@ const Contact = () => {
     console.log('message: ', message);
   };
 
+  const formBackgroundColor = 'rgba(191, 191, 191, .5)';
+  const formTextColor = 'cyan';
+
   // onChange={e => setName(e.target.value)}
   // onClick={e => { handleSubmit(e) }}
 
@@ -33,14 +36,34 @@ const Contact = () => {
           <label className="form-label" for="name">
             Name
           </label>
-          <input className="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+          <input
+            className="form-control shadow-none"
+            id="name"
+            type="text"
+            data-sb-validations="required"
+            style={{
+              backgroundColor: formBackgroundColor,
+              border: 'none',
+              color: formTextColor
+            }}
+          />
           <div className="invalid-feedback" data-sb-feedback="name:required">
             Name is required.
           </div>
         </div>
         <div className="col-lg-4 col-md-4 col-sm-12">
           <label className="form-label" for="emailAddress">Email Address</label>
-          <input className="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+          <input
+            className="form-control shadow-none"
+            id="emailAddress"
+            type="email"
+            data-sb-validations="required, email"
+            style={{
+              backgroundColor: formBackgroundColor,
+              border: 'none',
+              color: formTextColor
+            }}
+          />
           <div className="invalid-feedback" data-sb-feedback="emailAddress:required">
             Email Address is required.
           </div>
@@ -60,7 +83,18 @@ const Contact = () => {
           <label className="form-label" for="message">
             Message
           </label>
-          <textarea className="form-control" id="message" type="text" placeholder="Message" style={{height: '10rem'}} data-sb-validations="required"></textarea>
+          <textarea
+            className="form-control shadow-none"
+            id="message"
+            type="text"
+            style={{
+              height: '10rem',
+              backgroundColor: formBackgroundColor,
+              border: 'none',
+              color: formTextColor
+            }}
+            data-sb-validations="required"
+          />
           <div className="invalid-feedback" data-sb-feedback="message:required">
             Message is required.
           </div>

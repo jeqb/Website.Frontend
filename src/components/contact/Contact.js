@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import './Contact.css';
 
 const Contact = () => {
 
@@ -14,48 +13,99 @@ const Contact = () => {
     console.log('message: ', message);
   };
 
+  const formBackgroundColor = 'rgba(191, 191, 191, .5)';
+  const formTextColor = 'cyan';
+
+  // onChange={e => setName(e.target.value)}
+  // onClick={e => { handleSubmit(e) }}
+
   return (
-    <div className="Content-Container">
-      <h1>
-        Contact
-      </h1>
-      <div
-        className="ContactForm"
-      >
-        <label>Name</label>
-        <br/>
-        <input
-          name='Name'
-          type='text'
-          onChange={e => setName(e.target.value)}
-        />
-        <br/>
-        <br/>
-        <label>Contact Email</label>
-        <br/>
-        <input
-          name='Email'
-          type='text'
-          onChange={e => setEmail(e.target.value)}
-        />
-        <br/>
-        <br/>
-        <label>Message</label>
-        <br/>
-        <textarea
-          name='Message'
-          type='text'
-          cols="50"
-          rows="10"
-          onChange={e => setMessage(e.target.value)}
-        />
-        <br/>
-        <br/>
-        <div
-          className="Button"
-          onClick={e => { handleSubmit(e) }}
-        >
-          Submit
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-lg-2 col-md-2 col-sm-12">
+          <h1 className="text-center">
+            Contact
+          </h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-2 col-md-2">
+          {/* spacer */}
+        </div>
+        <div className="col-lg-4 col-md-4 col-sm-12">
+          <label className="form-label" for="name">
+            Name
+          </label>
+          <input
+            className="form-control shadow-none"
+            id="name"
+            type="text"
+            data-sb-validations="required"
+            style={{
+              backgroundColor: formBackgroundColor,
+              border: 'none',
+              color: formTextColor
+            }}
+          />
+          <div className="invalid-feedback" data-sb-feedback="name:required">
+            Name is required.
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-4 col-sm-12">
+          <label className="form-label" for="emailAddress">Email Address</label>
+          <input
+            className="form-control shadow-none"
+            id="emailAddress"
+            type="email"
+            data-sb-validations="required, email"
+            style={{
+              backgroundColor: formBackgroundColor,
+              border: 'none',
+              color: formTextColor
+            }}
+          />
+          <div className="invalid-feedback" data-sb-feedback="emailAddress:required">
+            Email Address is required.
+          </div>
+          <div className="invalid-feedback" data-sb-feedback="emailAddress:email">
+            Email Address Email is not valid.
+          </div>
+        </div>
+        <div className="col-lg-2 col-md-2">
+          {/* spacer */}
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-2 col-md-2">
+          {/* spacer */}
+        </div>
+        <div className="col-lg-8 col-md-8 col-sm-12">
+          <label className="form-label" for="message">
+            Message
+          </label>
+          <textarea
+            className="form-control shadow-none"
+            id="message"
+            type="text"
+            style={{
+              height: '10rem',
+              backgroundColor: formBackgroundColor,
+              border: 'none',
+              color: formTextColor
+            }}
+            data-sb-validations="required"
+          />
+          <div className="invalid-feedback" data-sb-feedback="message:required">
+            Message is required.
+          </div>
+          <div className="d-flex align-items-center justify-content-center">
+            <div className="RetroButton">
+              Submit
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-2 col-md-2">
+          {/* spacer */}
         </div>
       </div>
     </div>

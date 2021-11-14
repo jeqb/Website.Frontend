@@ -9,12 +9,12 @@ import Contact from './components/contact/Contact';
 import Services from './components/services/Services';
 import NotFound from './components/not-found/NotFound';
 
+// 
 
 const App = () => {
   return (
     <div className="App">
       <Header/>
-      <RetroBackground/>
       <Switch>
         <Redirect exact from='/' to='/about'/>
         <Route path='/about' component={About} />
@@ -22,6 +22,7 @@ const App = () => {
         <Route path='/services' component={Services} />
         <Route component={NotFound} />
       </Switch>
+      <RetroBackground/>
     </div>
   );
 }

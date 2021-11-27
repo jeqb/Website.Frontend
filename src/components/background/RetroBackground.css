@@ -2,30 +2,18 @@
   height: 100vh;
   margin: 0;
   background: linear-gradient(to bottom, #010310 0,#0c1142 0%,#45125e 5%,#d53567 20%,#f0c3d9 25%,#0c1142 25%) fixed;
-  background-size:100vh var(--background-height,100vh);
+  background-size:100vh;
   overflow:hidden;
-  position:absolute;
+  position:fixed;
   left:0;
   top:0;
   width:100vw;
-  height:var(--background-height,100vh);
+  height:100vh;
   z-index:-2;
 }
 
 .animated-clouds:before{
   filter: url(#filter);
-}
-
-.background-80s:before{
-  content:'';
-  background: linear-gradient(to bottom, #010310 0,#0c1142 0%,#45125e 5%,#d53567 20%,#f0c3d9 25%,#0c1142 25%) fixed;
-  width:100vh;
-  height:15vh;
-  position:absolute;
-  z-index:-1;
-  left:0;
-  top:0;
-  opacity:0.2;
 }
 
 .stars:after{

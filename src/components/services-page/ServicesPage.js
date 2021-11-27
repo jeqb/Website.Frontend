@@ -4,7 +4,7 @@ import DotnetLogo from './dotnet-logo.jpg';
 import ReactLogo from './react-logo.png';
 import SqlLogo from './sql-database-logo.png';
 
-const Services = () => {
+const ServicesPage = () => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -74,4 +74,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesPage;

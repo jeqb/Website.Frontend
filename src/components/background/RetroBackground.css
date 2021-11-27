@@ -2,30 +2,18 @@
   height: 100vh;
   margin: 0;
   background: linear-gradient(to bottom, #010310 0,#0c1142 0%,#45125e 5%,#d53567 20%,#f0c3d9 25%,#0c1142 25%) fixed;
-  background-size:100vh var(--background-height,100vh);
+  background-size:100vh;
   overflow:hidden;
-  position:absolute;
+  position:fixed;
   left:0;
   top:0;
   width:100vw;
-  height:var(--background-height,100vh);
+  height:100vh;
   z-index:-2;
 }
 
 .animated-clouds:before{
   filter: url(#filter);
-}
-
-.background-80s:before{
-  content:'';
-  background: linear-gradient(to bottom, #010310 0,#0c1142 0%,#45125e 5%,#d53567 20%,#f0c3d9 25%,#0c1142 25%) fixed;
-  width:100vh;
-  height:15vh;
-  position:absolute;
-  z-index:-1;
-  left:0;
-  top:0;
-  opacity:0.2;
 }
 
 .stars:after{
@@ -89,7 +77,12 @@
   height: 100%;
   background-position-y: 0px;
   background-image:
-        repeating-linear-gradient(90deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px))),repeating-linear-gradient(180deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px)));
+        repeating-linear-gradient(90deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,
+        transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),
+        var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px))),
+        repeating-linear-gradient(180deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,
+        transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),
+        var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px)));
   transform:perspective(50vh) rotateX(60deg) translateZ(10px);
   animation:moving-grid 0.5s infinite linear;
   z-index:-1;

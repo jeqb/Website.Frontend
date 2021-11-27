@@ -89,7 +89,12 @@
   height: 100%;
   background-position-y: 0px;
   background-image:
-        repeating-linear-gradient(90deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px))),repeating-linear-gradient(180deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px)));
+        repeating-linear-gradient(90deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,
+        transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),
+        var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px))),
+        repeating-linear-gradient(180deg,var(--grid-color,rgba(115,59,139,0.7)) 0%,
+        transparent calc(1px + var(--grid-blur,1px)), transparent var(--grid-size, 30px),
+        var(--grid-color,rgba(115,59,139,0.7)) calc(var(--grid-size, 30px) + 1px + var(--grid-blur,1px)));
   transform:perspective(50vh) rotateX(60deg) translateZ(10px);
   animation:moving-grid 0.5s infinite linear;
   z-index:-1;

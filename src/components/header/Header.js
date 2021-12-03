@@ -13,6 +13,17 @@ const Header = () => {
     history.push(path);
   
   };
+
+  const handleGitHubClick = () => {
+    var win = window.open('https://github.com/jeqb/');
+    win.focus();
+  };
+  
+  
+  const handleLinkedInClick = () => {
+    var win = window.open('https://www.linkedin.com/in/james-bonner-367012b1');
+    win.focus();
+  };
   
   return (
     <nav className="navbar navbar-expand-lg navbar-expand-md navbar-dark">
@@ -54,9 +65,27 @@ const Header = () => {
                   className={`nav-link active ${isNavCollapsed ? 'RetroButton' : 'RetroButton Button-Collapsed'}`}
                   aria-current="page"
                   onClick={() => handleClick('/contact')}
-                >
-                  Contact
-                </div>
+              >
+                Contact
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                  className={`nav-link active ${isNavCollapsed ? 'RetroButton' : 'RetroButton Button-Collapsed'}`}
+                  aria-current="page"
+                  onClick={() => handleGitHubClick()}
+              >
+                Github
+              </div>
+            </li>
+            <li className="nav-item">
+              <div
+                  className={`nav-link active ${isNavCollapsed ? 'RetroButton' : 'RetroButton Button-Collapsed'}`}
+                  aria-current="page"
+                  onClick={() => handleLinkedInClick()}
+              >
+                LinkedIn
+              </div>
             </li>
           </ul>
         </div>

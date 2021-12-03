@@ -25,8 +25,9 @@ const ServicesPage = () => {
               alt=""
               style={{maxHeight: '20vh'}}
             />
-            <p>
-              I am a .NET developer specalizing in .Net Core backend services.
+            <p style={{ textAlign: 'left', paddingLeft: '5%', paddingRight: '5%' }}>
+              I am a .NET developer who focuses on writing testable, scalable, and maintainable code.
+              Most of my work in C# / .NET has been in backend web systems and cloud integrations.
             </p>
           </div>
         </div>
@@ -37,8 +38,9 @@ const ServicesPage = () => {
               alt=""
               style={{maxHeight: '20vh'}}
             />
-            <p>
-              Multiple years of web development experience in Microsoft Azure.
+            <p style={{ textAlign: 'left', paddingLeft: '5%', paddingRight: '5%' }}>
+              Microsoft Azure is my cloud system of choice. My career was started in cloud development building an ML system
+              in python which deployed into Azure App services via the Azure Devops CI/CD pipelines.
             </p>
           </div>
         </div>
@@ -49,8 +51,9 @@ const ServicesPage = () => {
               alt=""
               style={{maxHeight: '20vh'}}
             />
-            <p>
-              My frontend framework of choice is React.
+            <p style={{ textAlign: 'left', paddingLeft: '5%', paddingRight: '5%' }}>
+              My frontend framework of choice is React. Look I ain't going to tell you I'm the best frontend developer ever, but
+              if nothing else, I am FANTASTICALLY mediocre at it. Give me a week and I'll get that div centered for you.
             </p>
           </div>
         </div>
@@ -62,8 +65,10 @@ const ServicesPage = () => {
               style={{maxHeight: '20vh'}}
             />
           </div>
-            <p>
-              Multiple years of web development experience in Microsoft Azure.
+            <p style={{ textAlign: 'left', paddingLeft: '5%', paddingRight: '5%' }}>
+              I originally worked as a Data Analyst writing SQL queries all day every day for about 9 months.
+              Writing 200-500 line queries was the norm for me. Temp tables are your friend. Microsoft SQL server
+              is the tool of my trade.
             </p>
         </div>
         <div className="">

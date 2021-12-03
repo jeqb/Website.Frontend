@@ -9,11 +9,10 @@ import Contact from './components/contact/Contact';
 import ServicesPage from './components/services-page/ServicesPage';
 import NotFound from './components/not-found/NotFound';
 
-// 
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" style={{ display: 'flex', flexDirection: 'column' }}>
       <Header/>
       <Switch>
         <Redirect exact from='/' to='/about'/>

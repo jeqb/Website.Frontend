@@ -6,7 +6,7 @@ import SqlLogo from './sql-database-logo.png';
 
 const ServicesPage = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid d-flex flex-column" style={{ flexGrow: '1', background: 'green'}}>
       <div className="row">
         <div className="col-lg-2 col-md-2 col-sm-12">
           <h1 className="text-center">
@@ -14,7 +14,7 @@ const ServicesPage = () => {
           </h1>
         </div>
       </div>
-      <div className="row">
+      <div className="row flex-grow-1">
         <div className="col-lg-2">
           {/* spacer */}
         </div>

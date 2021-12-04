@@ -43,3 +43,8 @@ html, body, #root, .App {
   color: none;
   background: none;
 }
+
+/* for the Header */
+.navbar .navbar-nav .nav-link:hover {
+  color: yellow;
+}

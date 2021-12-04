@@ -2,6 +2,8 @@ import React from 'react';
 import './RetroBackground.css';
 import { ReactComponent as CloudSvg } from './cloud_effect.svg';
 
+// Original source: https://codepen.io/inegoita/pen/BgdXMw
+
 const RetroBackground = () => {
   return(
     <div

@@ -1,5 +1,6 @@
 import React from 'react';
 import Self from './self.jpg';
+import Desert from './desert.jpg';
 import Sunset from './sunset.jpg';
 
 const About = () => {
@@ -24,6 +25,11 @@ const About = () => {
             style={{borderRadius: '3%', border: '2px solid cyan'}}
           />
         </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-3 col-md-3">
+          {/* spacer */}
+        </div>
         <div className="col-lg-5 col-md-5 col-sm-12">
           <p>
             I am a software engineer based out of Phoenix Arizona. I specialize in
@@ -41,9 +47,14 @@ const About = () => {
             then React or Angular for the frontend.
           </p>
         </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-8 col-md-8">
+          {/* spacer */}
+        </div>
         <div className="col-lg-3 col-md-3 col-sm-12">
           <img
-            src={Sunset}
+            src={Desert}
             alt=""
             className="img-fluid"
             style={{borderRadius: '3%', border: '2px solid cyan'}}

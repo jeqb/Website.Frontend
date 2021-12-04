@@ -20,7 +20,7 @@ const Contact = () => {
   // onClick={e => { handleSubmit(e) }}
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid d-flex flex-column" style={{ flexGrow: '1' }}>
       <div className="row">
         <div className="col-lg-2 col-md-2 col-sm-12">
           <h1 className="text-center">
@@ -28,7 +28,7 @@ const Contact = () => {
           </h1>
         </div>
       </div>
-      <div className="row">
+      <div className="row flex-grow-1 align-items-end">
         <div className="col-lg-2 col-md-2">
           {/* spacer */}
         </div>
@@ -75,7 +75,7 @@ const Contact = () => {
           {/* spacer */}
         </div>
       </div>
-      <div className="row">
+      <div className="row flex-grow-1 align-items-start">
         <div className="col-lg-2 col-md-2">
           {/* spacer */}
         </div>

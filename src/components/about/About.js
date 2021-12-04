@@ -1,6 +1,6 @@
 import React from 'react';
 import Self from './self.jpg';
-import Sunset from './sunset.jpg';
+import Desert from './desert.jpg';
 
 const About = () => {
   return (
@@ -43,7 +43,7 @@ const About = () => {
         </div>
         <div className="col-lg-3 col-md-3 col-sm-12">
           <img
-            src={Sunset}
+            src={Desert}
             alt=""
             className="img-fluid"
             style={{borderRadius: '3%', border: '2px solid cyan'}}

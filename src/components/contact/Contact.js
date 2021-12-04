@@ -88,7 +88,7 @@ const Contact = () => {
             id="message"
             type="text"
             style={{
-              height: '10rem',
+              height: '30rem',
               backgroundColor: formBackgroundColor,
               border: 'none',
               color: formTextColor

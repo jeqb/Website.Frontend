@@ -11,13 +11,11 @@ const Contact = () => {
     console.log('name: ', name);
     console.log('email: ', email);
     console.log('message: ', message);
+    console.log('backend url', process.env.REACT_APP_BACKEND_URL)
   };
 
   const formBackgroundColor = 'rgba(191, 191, 191, .5)';
   const formTextColor = 'cyan';
-
-  // onChange={e => setName(e.target.value)}
-  // onClick={e => { handleSubmit(e) }}
 
   return (
     <div className="container-fluid d-flex flex-column" style={{ flexGrow: '1' }}>
@@ -46,6 +44,7 @@ const Contact = () => {
               border: 'none',
               color: formTextColor
             }}
+            onChange={ e => setName(e.target.value)}
           />
           <div className="invalid-feedback" data-sb-feedback="name:required">
             Name is required.
@@ -63,6 +62,7 @@ const Contact = () => {
               border: 'none',
               color: formTextColor
             }}
+            onChange={ e => setEmail(e.target.value)}
           />
           <div className="invalid-feedback" data-sb-feedback="emailAddress:required">
             Email Address is required.
@@ -94,12 +94,13 @@ const Contact = () => {
               color: formTextColor
             }}
             data-sb-validations="required"
+            onChange={ e => setMessage(e.target.value)}
           />
           <div className="invalid-feedback" data-sb-feedback="message:required">
             Message is required.
           </div>
           <div className="d-flex align-items-center justify-content-center">
-            <div className="RetroButton">
+            <div className="RetroButton" onClick={e => { handleSubmit(e) }}>
               Submit
             </div>
           </div>

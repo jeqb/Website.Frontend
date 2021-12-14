@@ -1,17 +1,27 @@
 import React from 'react';
 import { useState } from 'react';
 
+import api from '../../api/api';
+
 const Contact = () => {
 
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
 
-  const handleSubmit= (e) => {
+  const handleSubmit = async (e) => {
     console.log('name: ', name);
     console.log('email: ', email);
     console.log('message: ', message);
     console.log('backend url', process.env.REACT_APP_BACKEND_URL)
+
+    var payload = {
+      name: name,
+      email: email,
+      content: message
+    };
+
+    await api.Message.create(payload);
   };
 
   const formBackgroundColor = 'rgba(191, 191, 191, .5)';

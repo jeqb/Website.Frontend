@@ -10,16 +10,13 @@ const Contact = () => {
   const [message, setMessage] = useState();
 
   const handleSubmit = async (e) => {
-    console.log('name: ', name);
-    console.log('email: ', email);
-    console.log('message: ', message);
-    console.log('backend url', process.env.REACT_APP_BACKEND_URL)
-
     var payload = {
       name: name,
       email: email,
       content: message
     };
+
+    console.log("handleSubmit called with payload: " + JSON.stringify(payload));
 
     await api.Message.create(payload);
   };

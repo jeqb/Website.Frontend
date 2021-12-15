@@ -9,6 +9,7 @@ const formTextColor = 'cyan';
 const Contact = () => {
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
@@ -27,6 +28,7 @@ const Contact = () => {
     await api.Message.create(payload)
       .then(() => {
         setIsLoading(false)
+        setIsSubmitted(true)
       });
   };
 
@@ -45,6 +47,27 @@ const Contact = () => {
             <div className="spinner-border" role="status">
               <span className="visually-hidden">Loading...</span>
             </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (isSubmitted) {
+    return (
+      <div className="container-fluid d-flex flex-column" style={{ flexGrow: '1' }}>
+        <div className="row">
+          <div className="col-lg-2 col-md-2 col-sm-12">
+            <h1 className="text-center">
+              Contact
+            </h1>
+          </div>
+        </div>
+        <div className="row flex-grow-1 align-items-center">
+          <div className="d-flex justify-content-center">
+            <h4>
+              Message Received
+            </h4>
           </div>
         </div>
       </div>

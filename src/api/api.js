@@ -3,7 +3,7 @@ import { history } from '../index.js';
 
 axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
 
-/*
+
 axios.interceptors.request.use((config) => {
   const token = window.localStorage.getItem('jwt');
   if (token) config.headers.Authorization = `Bearer ${token}`;
@@ -11,10 +11,9 @@ axios.interceptors.request.use((config) => {
 }, error => {
   return Promise.reject(error)
 })
-*/
+
 
 // TODO: add the badrequest, unauthorized, notfound, internalservererror pages
-/*
 axios.interceptors.response.use(undefined, error => {
   console.log(error);
   // backend is down for sure
@@ -42,7 +41,6 @@ axios.interceptors.response.use(undefined, error => {
   }
 
 });
-*/
 
 const responseBody = (response) => response
 

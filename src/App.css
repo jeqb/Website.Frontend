@@ -30,7 +30,7 @@ html, body, #root, .App {
 .RetroButton:hover {
   transition-duration: 0.3s;
   cursor: pointer;
-  color: #F9C80E;
+  color: yellow;
 }
 
 .Button-Collapsed {

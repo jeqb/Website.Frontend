@@ -1,7 +1,6 @@
 import React from 'react';
 import Self from './self.jpg';
 import Desert from './desert.jpg';
-import Sunset from './sunset.jpg';
 
 const About = () => {
   return (

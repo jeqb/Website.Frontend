@@ -1,5 +1,5 @@
 import './App.css';
-/*
+
 import { Route, withRouter, Switch, Redirect } from 'react-router-dom';
 
 import Header from './components/header/Header';
@@ -27,14 +27,3 @@ const App = () => {
 }
 
 export default withRouter(App);
-*/
-
-const App = () => {
-  return (
-    <div>
-      THE DEPLOYMENTS ARE WORKIN!
-    </div>
-  );
-}
-
-export default App;

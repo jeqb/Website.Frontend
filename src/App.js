@@ -13,6 +13,7 @@ import NotFound from './components/not-found/NotFound';
 const App = () => {
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column' }}>
+      {/*
       <Header/>
       <Switch>
         <Redirect exact from='/' to='/about'/>
@@ -22,6 +23,8 @@ const App = () => {
         <Route component={NotFound} />
       </Switch>
       <RetroBackground/>
+      */}
+      CI/CD WORKS!
     </div>
   );
 }

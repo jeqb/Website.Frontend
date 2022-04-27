@@ -58,6 +58,8 @@ const Message = {
   delete: (id) => requests.delete(`/Message/${id}`)
 }
 
-export default {
+const exports = {
   Message
 }
+
+export default exports;

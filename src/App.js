@@ -1,5 +1,5 @@
 import './App.css';
-
+/*
 import { Route, withRouter, Switch, Redirect } from 'react-router-dom';
 
 import Header from './components/header/Header';
@@ -13,7 +13,6 @@ import NotFound from './components/not-found/NotFound';
 const App = () => {
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column' }}>
-      {/*
       <Header/>
       <Switch>
         <Redirect exact from='/' to='/about'/>
@@ -23,10 +22,19 @@ const App = () => {
         <Route component={NotFound} />
       </Switch>
       <RetroBackground/>
-      */}
-      CI/CD WORKS!
     </div>
   );
 }
 
 export default withRouter(App);
+*/
+
+const App = () => {
+  return (
+    <div>
+      THE DEPLOYMENTS ARE WORKIN!
+    </div>
+  );
+}
+
+export default App;

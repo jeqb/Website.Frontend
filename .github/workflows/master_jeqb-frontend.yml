@@ -61,4 +61,4 @@ jobs:
           app-name: 'jeqb-frontend'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_051BA11B1C5847EDA8D83108DD36D7F7 }}
-          package: .
+          package: ./build

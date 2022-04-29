@@ -52,8 +52,8 @@ const ServicesPage = () => {
               style={{maxHeight: '20vh'}}
             />
             <p style={{ textAlign: 'left', paddingLeft: '5%', paddingRight: '5%' }}>
-              My frontend framework of choice is React. Look I ain't going to tell you I'm the best frontend developer ever, but
-              if nothing else, I am FANTASTICALLY mediocre at it. Give me a week and I'll get that div centered for you.
+              My frontend framework of choice is React. I'm always looking for opportunities to get better with it.
+              As a matter of fact, this website is built on React.
             </p>
           </div>
         </div>

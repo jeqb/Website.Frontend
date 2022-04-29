@@ -42,8 +42,8 @@ const About = () => {
             into Enterprise software development doing .Net development full time.
           </p>
           <p>
-            Now I work as a full stack developer, with .Net being my preferred backend and
-            then React or Angular for the frontend.
+            I'm always looking to build and improve my skillset with .Net as my preferred backend and
+            React for the frontend.
           </p>
         </div>
       </div>

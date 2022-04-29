@@ -56,10 +56,15 @@ const Message = {
   details: (id) => requests.get(`/Message/${id}`),
   create: (message) => requests.post('/Message', message),
   delete: (id) => requests.delete(`/Message/${id}`)
-}
+};
+
+const FinancialInformation = {
+  details: () => requests.get(`/FinancialInformation`)
+};
 
 const exports = {
-  Message
-}
+  Message,
+  FinancialInformation
+};
 
 export default exports;
